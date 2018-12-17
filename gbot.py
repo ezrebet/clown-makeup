@@ -154,7 +154,7 @@ class gbot(threading.Thread):
                 self.br.open( vote_url )
         except:
             pass
-        time.sleep(random.randint(3,15))
+        time.sleep(random.randint(1,3))
     #- End arena voter
 
     #- Being slots
@@ -190,7 +190,7 @@ class gbot(threading.Thread):
         url = self.gsi + 'v=phpobject&m=a:1:{i:0;a:2:{i:0;s:3:"800";i:1;a:6:{i:0;i:3;i:1;i:0;i:2;s:' + str(48) + ':"' + self.ssid + '";i:3;i:5794798;i:4;s:32:"746c80e1a272edc034abbdf090bdd715";i:5;i:1;}}}'
         try:
             self.br.open(url)
-            time.sleep(random.randint(3,30))
+            time.sleep(random.randint(1,3))
         except:
             pass
 
